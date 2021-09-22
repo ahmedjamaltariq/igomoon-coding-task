@@ -1,0 +1,53 @@
+<!-- Begin Macro -->
+{% macro input_field(title, type, name, id, required) -%}
+<span class="input input--igomoon">
+    <input class="input__field input__field--igomoon" type="{{ type }}" name="{{ name }}" id="{{ id }}" {% if required %} required {% endif %} />
+    <label class="input__label input__label--igomoon">
+        <span class="input__label-content input__label-content--igomoon">
+            {{ title }}
+            {% if required %}
+            <sup>*</sup>
+            {% endif %}
+            <span id="{{ id }}-val"></span>
+        </span>
+    </label>
+</span>
+{%- endmacro %}
+<!-- End Macro -->
+
+<section class="module-outer module-form_optin">
+    <div class="module-inner py-5 text-center">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12 mx-auto">
+                    {% if module.heading %}
+                    <h2 class="heading mb-4">{{ module.heading }}</h2>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12 mx-auto">
+                    <div class="card shadow-sm">
+                        <div class="progress mb-4">
+                            <div class="progress-bar" style="width:33%"></div>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                {{ input_field('Email','email','email','email',true) }}
+                                {% if module.include_name_field %}
+                                {{ input_field('Name','text','name','name',false) }}
+                                {% endif %}
+                                <div class="mt-3">
+                                    <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

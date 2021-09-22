@@ -1,0 +1,19 @@
+{
+  "icon": "./assets/img/icon.svg",
+  "label": "Text Block",
+  "inline_help_text": "This is a content block with title, content and Cta or button with an option to choose where you want the content to be aligned",
+  "module_id": "",
+  "is_available_for_new_content": true,
+  "global": false,
+  "host_template_types": [
+    "PAGE",
+    "BLOG_POST",
+    "BLOG_LISTING"
+  ],
+  "smart_type": "NOT_SMART",
+  "tags": [],
+  "css_assets": [],
+  "js_assets": [],
+  "other_assets": [],
+  "extra_classes": ""
+}

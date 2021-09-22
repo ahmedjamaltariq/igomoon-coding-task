@@ -1,0 +1,26 @@
+[
+  {
+    "allow_new_line": false,
+    "default": "Ptulae recubans sub tegmine fagi dolor.",
+    "id": "heading",
+    "label": "Heading",
+    "locked": false,
+    "name": "heading",
+    "required": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "validation_regex": "",
+    "inline_help_text": "This is the heading input field for the form.",
+    "help_text": "This is the heading input field for the form. Write the heading and it updates the heading on the top of the form as well."
+  },
+  {
+    "type": "boolean",
+    "id": "098911a4-4961-69bc-cd51-c79c1e6f287d",
+    "default": true,
+    "display": "checkbox",
+    "label": "Include name field",
+    "name": "include_name_field",
+    "help_text": "This toggle feature is used to include and exclude the name input field in the form.",
+    "inline_help_text": "By checking this, the name input field will be included in the form every time."
+  }
+]
