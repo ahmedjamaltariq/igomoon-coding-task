@@ -2,25 +2,37 @@
   {
     "allow_new_line": false,
     "default": "Ptulae recubans sub tegmine fagi dolor.",
+    "help_text": "This is the heading input field for the form. Write the heading and it updates the heading on the top of the form as well.",
     "id": "heading",
+    "inline_help_text": "This is the heading input field for the form.",
     "label": "Heading",
     "locked": false,
     "name": "heading",
     "required": false,
     "show_emoji_picker": false,
     "type": "text",
-    "validation_regex": "",
-    "inline_help_text": "This is the heading input field for the form.",
-    "help_text": "This is the heading input field for the form. Write the heading and it updates the heading on the top of the form as well."
+    "validation_regex": ""
+  },
+  {
+    "default": true,
+    "display": "checkbox",
+    "help_text": "This toggle feature is used to include and exclude the name input field in the form.",
+    "id": "098911a4-4961-69bc-cd51-c79c1e6f287d",
+    "inline_help_text": "By checking this, the name input field will be included in the form every time.",
+    "label": "Include name field",
+    "locked": false,
+    "name": "include_name_field",
+    "required": false,
+    "type": "boolean"
   },
   {
     "type": "boolean",
-    "id": "098911a4-4961-69bc-cd51-c79c1e6f287d",
-    "default": true,
-    "display": "checkbox",
-    "label": "Include name field",
-    "name": "include_name_field",
-    "help_text": "This toggle feature is used to include and exclude the name input field in the form.",
-    "inline_help_text": "By checking this, the name input field will be included in the form every time."
+    "id": "0c3dc47c-dea5-f843-0f6a-afae05874217",
+    "default": false,
+    "display": "toggle",
+    "label": "Unique Email",
+    "name": "unique_email",
+    "help_text": "By turning this toggle switch ON, the user has to enter an email that is unique or doesn't exist in the system before.",
+    "inline_help_text": "Turn this ON to check the existence of email in the system."
   }
 ]

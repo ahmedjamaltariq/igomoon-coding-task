@@ -1,0 +1,29 @@
+<section class="module-outer module-night_mode">
+    <div class="module-inner py-5 text-center">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12 mx-auto">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <h4>Night Mode</h4>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+
+                                    <!-- Hidden variables to store the default or actual values of night range-->
+                                    <input type="hidden" id="night-start" value="{{ module.night_start }}">
+                                    <input type="hidden" id="night-end" value="{{ module.night_end }}">
+
+                                    <!-- Night toggle switch -->
+                                    <input id="night-mode-toggle" type="checkbox" {% if module.night_mode %} checked {% endif %} data-toggle="toggle" data-onstyle="secondary">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

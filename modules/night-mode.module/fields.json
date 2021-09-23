@@ -1,0 +1,36 @@
+[
+  {
+    "default": false,
+    "display": "toggle",
+    "help_text": "This toggle feature automatically enables and disables the night mode on the page.",
+    "id": "098911a4-4961-69bc-cd51-c79c1e6f287d",
+    "inline_help_text": "By turning this ON, the night mode will be automatically applied to the page.",
+    "label": "Night Mode",
+    "locked": false,
+    "name": "night_mode",
+    "required": false,
+    "type": "boolean"
+  },
+  {
+    "type": "number",
+    "id": "67794e7e-3393-b40e-62a1-ae5186dc39b5",
+    "display": "slider",
+    "step": 1,
+    "label": "Number",
+    "name": "night_start",
+    "default": 20,
+    "help_text": "Hour value in 24 hours format",
+    "inline_help_text": "Starting hour value in 24-hour format"
+  },
+  {
+    "type": "number",
+    "id": "f698dcb9-0cf6-5a74-acc7-1607b02a1e29",
+    "display": "slider",
+    "step": 1,
+    "label": "Night End",
+    "name": "night_end",
+    "default": 4,
+    "help_text": "Hour value in 24 hours format",
+    "inline_help_text": "End hour value in 24-hour format"
+  }
+]

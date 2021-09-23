@@ -1,7 +1,7 @@
 {
   "icon": "https://uxwing.com/wp-content/themes/uxwing/download/07-web-app-development/form.svg",
-  "label": "Text Block",
-  "inline_help_text": "This is a content block with title, content and Cta or button with an option to choose where you want the content to be aligned",
+  "label": "Night Mode",
+  "inline_help_text": "Having this module functional on the website enables users to turn on the night mode with a small toggle button on the page",
   "module_id": "",
   "is_available_for_new_content": true,
   "global": false,

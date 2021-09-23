@@ -1,0 +1,175 @@
+/* Body safe class */
+/* BS 4 progress bar customisation */
+/* Input form fields styling */
+/* Individual styles */
+/* igomoon */
+.ahmed-jamal-tariq {
+  background: #F8F9F9;
+}
+.module-form_optin {
+  .progress {
+    height: 5px;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+  .progress-bar {
+    height: 5px;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+  .input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 1em;
+    max-width: 350px;
+    width: calc(100% - 2em);
+    vertical-align: top;
+  }
+  .input__field {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 0.8em;
+    width: 60%;
+    border: none;
+    border-radius: 0;
+    background: #f0f0f0;
+    color: #057BFF;
+    font-weight: 400;
+    font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-appearance: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  .input__label {
+    display: inline-block;
+    float: right;
+    padding: 0 1em;
+    width: 40%;
+    color: #057BFF;
+    font-weight: bold;
+    font-size: 70.25%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .input__label-content {
+    position: relative;
+    display: block;
+    padding: 1.6em 0;
+    width: 100%;
+  }
+  .input--igomoon {
+    overflow: hidden;
+  }
+  .input__field--igomoon {
+    width: 100%;
+    background: transparent;
+    padding: 0.5em;
+    margin-bottom: 2em;
+    color: #f9f7f6;
+    z-index: 100;
+    opacity: 0;
+    &:focus {
+      opacity: 1;
+      -webkit-transition: opacity 0s 0.2s;
+      transition: opacity 0s 0.2s;
+      -webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+      transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+      + {
+        .input__label--igomoon {
+          &::before {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+          &::after {
+            opacity: 0;
+          }
+          .input__label-content--igomoon {
+            color: #057BFF;
+            -webkit-transform: translate3d(0, 2.1em, 0) scale3d(0.65, 0.65, 1);
+            transform: translate3d(0, 2.1em, 0) scale3d(0.65, 0.65, 1);
+          }
+        }
+      }
+    }
+  }
+  .input__label--igomoon {
+    width: 100%;
+    position: absolute;
+    text-align: left;
+    padding: 0.5em 0;
+    pointer-events: none;
+    font-size: 1em;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: 100%;
+      background: #057BFF;
+      top: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+      -webkit-transition: -webkit-transform 0.2s;
+      transition: transform 0.2s;
+      -webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+      transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: 2px;
+      background: #057BFF;
+      top: 100%;
+      -webkit-transition: opacity 0.2s;
+      transition: opacity 0.2s;
+      -webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+      transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+    }
+  }
+  .input__label-content--igomoon {
+    padding: 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transition: -webkit-transform 0.2s, color 0.2s;
+    transition: transform 0.2s, color 0.2s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+    transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+  }
+  .input--filled {
+    .input__field--igomoon {
+      opacity: 1;
+      -webkit-transition: opacity 0s 0.2s;
+      transition: opacity 0s 0.2s;
+      -webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+      transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+    }
+    .input__label--igomoon {
+      &::before {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      &::after {
+        opacity: 0;
+      }
+      .input__label-content--igomoon {
+        color: #057BFF;
+        -webkit-transform: translate3d(0, 2.1em, 0) scale3d(0.65, 0.65, 1);
+        transform: translate3d(0, 2.1em, 0) scale3d(0.65, 0.65, 1);
+      }
+    }
+  }
+  .final-step {
+    display: none;
+  }
+}
